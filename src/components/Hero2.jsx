@@ -1,0 +1,11 @@
+import React from 'react'
+
+const Hero2 = () => {
+  return (
+    <div>
+      <h1>Hero2</h1>
+    </div>
+  )
+}
+
+export default Hero2
