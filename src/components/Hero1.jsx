@@ -1,11 +1,19 @@
 import React from 'react'
+import FirstPage from './FirstPage'
+import SecondPage from './SecondPage'
 
 const Hero1 = () => {
   return (
     <div>
-      <h1>Hero1</h1>
+      <FirstPage />
+      <SecondPage/>
     </div>
   )
 }
+
+
+
+
+
 
 export default Hero1
