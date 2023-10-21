@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../assets/image 5.png"; // Replace with the actual path to your image
-import img2 from "../assets/image 7.png"; // Replace with the actual path to your image
-import img3 from "../assets/iPhone 14.png"; // Replace with the actual path to your image
+import img1 from "../assets/image 5.jpg";
+import img2 from "../assets/image 7.png";
+import img3 from "../assets/iPhone 14.png";
 import BG_RIBBON from "../assets/bg-ribbion.png";
 import frame1 from "../assets/Frame 1000001782.png";
 import frame2 from "../assets/Frame 1000001784.png";
@@ -23,65 +23,83 @@ const Hero2 = () => {
           Key features
         </h1>
         <div className="justify-center items-center px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
-          <div
-            className="bg-white p-6 mb-5 rounded-3xl shadow-md flex flex-col gap-11 overflow-hidden justify-center h-auto bg-no-repeat bg-cover relative"
-            style={{ backgroundImage: `url(${img1})` }}
-          >
-            <h1 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-2">
-              Everything in one place
-            </h1>
-            <p className="text-gray-700">
-              Add your personal notes to any case you'd prefer
-            </p>
-            <div className="flex mt-4 gap-4 sm:gap-8">
-              <button className="px-4 sm:px-8 py-2 bg-transparent text-white rounded-3xl">
-                Try it
-              </button>
-              <button className="px-4 sm:px-8 py-2 bg-blue-600 text-white rounded-3xl">
-                Use now
-              </button>
+          <div className=" mb-5 text-white rounded-3xl shadow-md bg-white relative">
+            <img src={img1} className="w-[1420px] rounded-3xl" alt="IMAGE1" />
+            <div
+              className="absolute top-0 left-9 right-0 bottom-0 flex flex-col gap-11 justify-center"
+              style={{
+                background: "", // Add a semi-transparent white background for better text visibility
+                padding: "20px", // Add padding to the container
+              }}
+            >
+              <h1 className="text-xl sm:text-2xl font-semibold  mb-2">
+                Everything in one place
+              </h1>
+              <p className="max-w[30px]">
+                Add your personal notes to any case you'd prefer
+              </p>
+              <div className="flex mt-[140px] gap-4 sm:gap-8">
+                <button className="px-4 sm:px-8 py-2 bg-transparent border rounded-3xl">
+                  <span className="px-5">Try it</span>
+                </button>
+                <button className="px-4 sm:px-8 py-2 bg-blue-600  rounded-3xl">
+                  <span className="px-5">Use now</span>
+                </button>
+              </div>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row justify-between">
-            <div
-              className="bg-white p-6 mb-5 mr-0 sm:mr-9 rounded-3xl shadow-md max-w-sm sm:max-w-md"
-              style={{ backgroundImage: `url(${img2})` }}
-            >
-              <h1 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-2">
-                Never be Late
-              </h1>
-              <p className="text-gray-700">
-                Our alarm system integrated within the app will notify you of
-                any upcoming events.
-              </p>
-              <div className="flex mt-4 gap-4 sm:gap-8">
-                <button className="px-4 sm:px-8 py-2 bg-transparent text-white rounded-3xl">
-                  Try it
-                </button>
-                <button className="px-4 sm:px-8 py-2 bg-blue-600 text-white rounded-3xl">
-                  Use now
-                </button>
+            <div className="text-white mb-5 mr-0 sm:mr-4 rounded-3xl w-[600px] shadow-md">
+              <img src={img2} className="w-full h-full rounded-3xl" alt="" />
+              <div
+                className="absolute top-[500px] left-[100px] right-0 bottom-0 flex flex-col gap-11 justify-center"
+                style={{
+                  background: "", // Add a semi-transparent white background for better text visibility
+                  padding: "20px", // Add padding to the container
+                }}
+              >
+                <h1 className="text-xl sm:text-2xl font-semibold 0 mb-2">
+                  Never be Late
+                </h1>
+                <p className=" max-w-[400px]">
+                  Our alarm system integrated within the app will notify you of
+                  any upcoming events.
+                </p>
+                <div className="flex mt-[240px] gap-4 sm:gap-8">
+                  <button className="px-4 sm:px-8 py-2 bg-transparent border border-black rounded-3xl">
+                    <span className="px-5 text-black">Try it</span>
+                  </button>
+                  <button className="px-4 sm:px-8 py-2 bg-blue-600  rounded-3xl">
+                    <span className="px-5">Use now</span>
+                  </button>
+                </div>
               </div>
             </div>
-            <div
-              className="bg-white p-6 ml-0 mb-5 sm:ml-8 rounded-3xl shadow-md max-w-sm sm:max-w-md"
-              style={{ backgroundImage: `url(${img3})` }}
-            >
-              <h1 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-2">
-                Stay Organized
-              </h1>
-              <p className="text-gray-700">
-                Ensure that your schedule is accurate by entering new
-                appointments or events into our digital calendar.
-              </p>
-              <div className="flex mt-4 gap-4 sm:gap-8">
-                <button className="px-4 sm:px-8 py-2 bg-transparent text-white rounded-3xl">
-                  Try it
-                </button>
-                <button className="px-4 sm:px-8 py-2 bg-blue-600 text-white rounded-3xl">
-                  Use now
-                </button>
+            <div className="text-white mb-5 rounded-3xl shadow-md w-[600px]">
+              <img src={img3} className="w-full h-full rounded-3xl" alt="" />
+              <div
+                className="absolute top-[500px] bottom-4  flex flex-col gap-11 mt-8 justify-center"
+                style={{
+                  background: "", // Add a semi-transparent white background for better text visibility
+                  padding: "20px", // Add padding to the container
+                }}
+              >
+                <h1 className="text-xl sm:text-2xl font-semibold  mb-2">
+                  Stay Organized
+                </h1>
+                <p className=" max-w-[300px]">
+                  Ensure that your schedule is accurate by entering new
+                  appointments or events into our digital calendar.
+                </p>
+                <div className="flex mt-[140px] gap-4 sm:gap-8">
+                  <button className="px-4 sm:px-8 py-2 bg-transparent border rounded-3xl">
+                    <span className="px-5">Try it</span>
+                  </button>
+                  <button className="px-4 sm:px-8 py-2 bg-blue-600  rounded-3xl">
+                    <span className="px-5">Use now</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
